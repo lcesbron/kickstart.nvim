@@ -91,7 +91,7 @@ vim.g.mapleader = ' '
 vim.g.maplocalleader = ' '
 
 -- Set to true if you have a Nerd Font installed and selected in the terminal
-vim.g.have_nerd_font = false
+vim.g.have_nerd_font = true
 
 -- [[ Setting options ]]
 -- See `:help vim.o`
@@ -1036,3 +1036,10 @@ require('lazy').setup({
 
 -- The line beneath this is called `modeline`. See `:help modeline`
 -- vim: ts=2 sts=2 sw=2 et
+
+-- PERSO :
+
+-- Fait en sorte que les tabs fassent 4 espaces visuellement
+vim.opt.tabstop = 4
+-- Fait en sorte que <tab> mette l'equivalent de 4 espaces en tab, ici 1 tab
+vim.opt.shiftwidth = 4
