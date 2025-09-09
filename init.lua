@@ -205,6 +205,10 @@ vim.keymap.set('n', '<C-k>', '<C-w><C-k>', { desc = 'Move focus to the upper win
 -- vim.keymap.set("n", "<C-S-j>", "<C-w>J", { desc = "Move window to the lower" })
 -- vim.keymap.set("n", "<C-S-k>", "<C-w>K", { desc = "Move window to the upper" })
 
+-- LSP keymap
+
+vim.keymap.set('n', 'gd', vim.lsp.buf.definition, opts)
+
 -- [[ Basic Autocommands ]]
 --  See `:help lua-guide-autocommands`
 
